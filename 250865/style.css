@@ -19,32 +19,3 @@ p:nth-child(4) {
 p:nth-child(5) {
     font-size: 2rem;
 }
-
-p.justify {
-    background-color: #cde;
-    text-align: justify;
-    width: 300px;
-}
-
-span.super {
-    vertical-align: super;
-}
-
-span.sub {
-    vertical-align: sub;
-}
-
-div.middle-vert {
-    background-color: #cde;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-}
-
-p.indent {
-    background-color: #cde;
-    text-indent: 50px;
-    width: 300px;
-}
