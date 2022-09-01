@@ -19,7 +19,7 @@
                 <td colspan="2" style="background-color: #6CD2FE;"><b>แสดงความคิดเห็น</b></td>
             </tr>
             <tr>
-                <td><textarea style="width: 98%; max"></textarea></td>
+                <td><textarea style="width: 98%;"></textarea></td>
             </tr>
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="ส่งข้อตวาม"></input>
