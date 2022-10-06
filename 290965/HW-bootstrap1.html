@@ -32,11 +32,11 @@
         </div>
     </div>
     <div class="bg-warning m-5 p-5">
-        <h1>รายชื่อบุคลากร</h1>
-        <p class="fw-bold">จำนวนบุคลากรทั้งหมด 20 คน</p>
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr class="bg-dark text-light table-dark">
+        <span class="fs-1">รายชื่อบุคลากร</span>
+        <div class="fw-bold mb-3">จำนวนบุคลากรทั้งหมด 20 คน</div>
+        <table class="table table-bordered table-striped border-white">
+            <thead class="table table-dark text-light">
+                <tr>
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -45,32 +45,34 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="fw-bold">1</td>
+                    <th scope="row">1</th>
                     <td>aaaaa</td>
                     <td>aaaaa</td>
                     <td>aaaaa@gmail.com</td>
                 </tr>
                 <tr>
-                    <td class="fw-bold">2</td>
+                    <th scope="row">2</th>
                     <td>bbbbb</td>
                     <td>bbbbb</td>
                     <td>bbbbb@gmail.com</td>
                 </tr>
                 <tr>
-                    <td class="fw-bold">3</td>
+                    <th scope="row">3</th>
                     <td>ccccc</td>
                     <td>ccccc</td>
                     <td>ccccc@gmail.com</td>
                 </tr>
+            </tbody>
+            <tfoot class="table-group-divider">
                 <tr>
-                    <td colspan="3">
-                        <h5 class="pt-2 fw-bold text-end">รวมคนมีอีเมลทั้งสิ้น</h5>
+                    <td colspan="3" class="fw-bold text-end fs-3">
+                        รวมคนมีอีเมลทั้งสิ้น
                     </td>
-                    <td>
-                        <h5 class="pt-2 fw-bold">3</h5>
+                    <td class="fw-bold fs-3">
+                        3
                     </td>
                 </tr>
-            </tbody>
+            </tfoot>
         </table>
     </div>
 </body>
