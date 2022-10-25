@@ -59,9 +59,9 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Action</button>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a href="#">เรียกดู</a></li>
-                            <li class="dropdown-item"><a href="#">แก้ไช</a></li>
-                            <li class="dropdown-item"><a href="#">ลบ</a></li>
+                            <li><a href="#" class="dropdown-item">เรียกดู</a></li>
+                            <li><a href="#" class="dropdown-item">แก้ไข</a></li>
+                            <li><a href="#" class="dropdown-item">ลบ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +74,109 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--table-->
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <caption>จำนวนบุคลากรทั้งหมด 5000 คน</caption>
+                            <thead class="table-secondary">
+                                <tr class="active">
+                                    <th>#</th>
+                                    <th>รูปประจำตัว</th>
+                                    <th>ชื่อ</th>
+                                    <th>นามสกุล</th>
+                                    <th>อีเมล</th>
+                                    <th>action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-center" scope="row"><input type="checkbox"></th>
+                                    <td class="text-center"><img src="" alt=""></td>
+                                    <td>พลกฤษณ์</td>
+                                    <td>วงษ์สันติสุข</td>
+                                    <td class="align-middle">phollakrit@gmail.com</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-info" type="button"><i class="bi bi-eye"></i> เรียกดู</button>
+                                            <button class="btn btn-success" type="button"><i class="bi bi-pencil"></i> แก้ไข</button>
+                                            <button class="btn btn-danger" type="button"><i class="bi bi-trash3"></i> ลบ</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row"><input type="checkbox"></th>
+                                    <td class="text-center"><img src="" alt=""></td>
+                                    <td>อนุชิต</td>
+                                    <td>ชาบำเหน็จ</td>
+                                    <td class="align-middle">anuchit@gmail.com</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-info" type="button"><i class="bi bi-eye"></i> เรียกดู</button>
+                                            <button class="btn btn-success" type="button"><i class="bi bi-pencil"></i> แก้ไข</button>
+                                            <button class="btn btn-danger" type="button"><i class="bi bi-trash3"></i> ลบ</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row"><input type="checkbox"></th>
+                                    <td class="text-center"><img src="" alt=""></td>
+                                    <td>สมชาย</td>
+                                    <td>เค็มจัด</td>
+                                    <td class="align-middle">somchai@outlook.com</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#view-modal"><i class="bi bi-eye"></i> เรียกดู</button>
+                                            <button class="btn btn-success" type="button"><i class="bi bi-pencil"></i> แก้ไข</button>
+                                            <button class="btn btn-danger" type="button"><i class="bi bi-trash3"></i> ลบ</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row"><input type="checkbox"></th>
+                                    <td class="text-center"><img src="" alt=""></td>
+                                    <td>สมหมาย <span class="badge bg-danger">ออกจากราชการ</span></td>
+                                    <td>จัดเต็ม</td>
+                                    <td class="align-middle">Sommaig@outlook.com</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-info" type="button"><i class="bi bi-eye"></i> เรียกดู</button>
+                                            <button class="btn btn-success" type="button"><i class="bi bi-pencil"></i> แก้ไข</button>
+                                            <button class="btn btn-danger" type="button"><i class="bi bi-trash3"></i> ลบ</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="view-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">ประวัติ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="" alt="">
+                                    <h5 class="card-title pt-3">สมชาย เค็มจัด</h5>
+                                    <p class="card-text">อาชีพนักฟุตบอลของสโมสรลิเวอร์พูล ปัจจุบันอายุ 38 ปี</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
