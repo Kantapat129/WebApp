@@ -53,7 +53,6 @@ if (!isset($_SESSION['id'])) {
                             ?>
                         </ul>
                     </span>
-
                 </div>
             </div>
             <br>
@@ -86,9 +85,14 @@ if (!isset($_SESSION['id'])) {
                     <span class="dropdown">
                         <button class="btn btn-light dropdown-toggle btn-sm" type="button" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">--ทั้งหมด--</button>
                         <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                            <li><a href="#" class="dropdown-item">ทั้งหมด</a></li>
-                            <li><a href="#" class="dropdown-item">เรื่องเรียน</a></li>
-                            <li><a href="#" class="dropdown-item">เรื่องทั่วไป</a></li>
+                            <?php  
+                                $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8", "root", "");
+                                $sql = "SELECT * FROM category";
+                                foreach($conn->query($sql) as $row){
+                                    echo "<li ><a href='#' class='dropdown-item'>".$row['name']."</a></li>";
+                                }
+                                $conn = null;
+                            ?>
                         </ul>
                     </span>
                 </div>
